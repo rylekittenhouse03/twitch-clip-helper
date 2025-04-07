@@ -14,7 +14,7 @@ class ClipDownloadState:
 def download_clip(url, output_dir, status_callback):
     """Downloads a single clip using yt-dlp."""
     state = ClipDownloadState()  # Create instance for this download
-
+    output_dir = output_dir + '\\clips\\'
     try:
         # Construct filename template for yt-dlp
         # Ensures valid filenames and avoids collisions
